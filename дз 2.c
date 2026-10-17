@@ -1,11 +1,14 @@
 #include <stdio.h>
-
-int main() {
+int dz();
+int main () {
+dz();
+}
+int dz() {
     double A = 21.317;
-    int a1 = (int)A;
-    double a2 = (int) ((A - a1)*1000);
-    //int D = (int)(F * 1000);
-    double AA = a2 + (a1 / 100.0);
+    int a1 = (int)A;//целая
+    double a2 = (int) ((A - a1)*1000);//дробная
+ 
+    double AA = a2 + (a1 / 100.0);//обратное
 
     printf("A = %.3f:\n", A);
     printf("целая часть: %d\n", a1);
